@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeeFrames - UI UX Design Agency</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-black">
+
+    <header class="bg-black/80 backdrop-blur-md text-white fixed top-0 w-full z-50">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+            <div>
+                <img src="images/logo.svg" alt="logo">
+            </div>
+
+            <div class="hidden lg:flex items-center gap-10 text-gray-300">
+                <a href="index.html" class="relative group hover:text-[#F3FE00] transition">
+                    Home
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#F3FE00] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+                <a href="about.html" class="relative group hover:text-[#F3FE00] transition">
+                    About
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#F3FE00] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+
+                <a href="work.html" class="relative group hover:text-[#F3FE00] transition">
+                    Work
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#F3FE00] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="service.html" class="relative group hover:text-[#F3FE00] transition">
+                    Services
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#F3FE00] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+            </div>
+
+            <div class="hidden lg:block">
+                <button
+                    class="text-black px-6 py-2 rounded-full font-semibold bg-[#F3FE00] hover:scale-105 hover:shadow-[0_0_20px_#F3FE00] transition-all duration-300">
+                    Work with us
+                </button>
+            </div>
+
+            <button id="menuBtn" class="lg:hidden flex flex-col gap-1">
+                <span class="bar w-6 h-[2px] bg-[#F3FE00] transition-all"></span>
+                <span class="bar w-6 h-[2px] bg-[#F3FE00] transition-all"></span>
+                <span class="bar w-6 h-[2px] bg-[#F3FE00] transition-all"></span>
+            </button>
+        </nav>
+
+        <div id="mobileMenu"
+            class="lg:hidden overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out px-6 bg-black text-gray-300">
+            <div class="py-6 space-y-4">
+                <a href="#" class="block text-[#F3FE00]">Home</a>
+                <a href="#" class="block hover:text-[#F3FE00]">About</a>
+                <a href="#" class="block hover:text-[#F3FE00]">Services</a>
+                <a href="#" class="block hover:text-[#F3FE00]">Work</a>
+                <a href="#" class="block hover:text-[#F3FE00]">Insights</a>
+
+                <button
+                    class="w-full mt-4 bg-[#F3FE00] text-black py-2 rounded-full font-semibold hover:shadow-[0_0_20px_#F3FE00] transition">
+                    Work with us
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="pt-20">
+        <section class="hero-section">
+            <div class="relative w-full min-h-screen overflow-hidden">
+
+                <img width="73" height="80" src="https://zeeframes.com/frontend-assets/images/svgs/hero-star.svg"
+                    alt="star"
+                    class="absolute left-6 md:left-40 bottom-10 md:bottom-40 z-10 w-10 md:w-16 animate-[spin_20s_linear_infinite]">
+
+                <img src="images/home-bubble.webp" alt="home-bubble"
+                    class="absolute top-0 left-1/3 -translate-x-1/2 z-0 opacity-70 w-[80%] md:w-auto">
+
+                <div class="absolute inset-0 flex flex-col items-center justify-center z-20 px-4 md:px-6 text-center">
+
+                    <h1
+                        class="text-white text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold uppercase leading-tight">
+                        Creative Intelligence <br> in Every Pixel
+                    </h1>
+
+                    <p class="text-white mt-4 text-base sm:text-lg md:text-xl max-w-xl">
+                        We craft <span class="text-[#F3FE00]">stunning</span> designs for businesses worldwide.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 py-8">
+
+                        <button
+                            class="px-6 py-3 rounded-full bg-white text-black font-semibold shadow-lg w-full sm:w-auto">
+                            Schedule a Call
+                        </button>
+
+                        <button
+                            class="px-6 py-3 rounded-full border border-gray-400 text-white font-semibold w-full sm:w-auto">
+                            © 2025 Work
+                        </button>
+
+                    </div>
+
+                    <span class="text-white text-sm sm:text-base">
+                        Trusted by Industry Leaders & Fast-Growing Startups
+                    </span>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="video-section bg-black text-white">
+
+            <div class="w-full aspect-video md:h-screen overflow-hidden mt-10">
+                <video src="https://zeeframes.com/frontend-assets/media/zeeframes-process.mp4" autoplay muted loop
+                    playsinline class="w-full h-full object-cover">
+                </video>
+            </div>
+
+            <div class="py-10 text-center max-w-5xl mx-auto px-4 md:px-6">
+
+                <span class="text-[#F3FE00] uppercase tracking-wide text-sm md:text-base">
+                    how we helped others succeed
+                </span>
+
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-4 leading-tight">
+                    Our Creative Showcase
+                </h2>
+
+                <p class="text-gray-300 mt-4 text-base md:text-lg">
+                    We have become experts in creating top-notch digital products. We design beautifully and develop
+                    excellently.
+                </p>
+
+            </div>
+
+
+            <div class="px-4 md:px-12">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+                    <div class="text-white p-2">
+                        <img src="https://zeeframes.com/storage/280/3.png" class="w-full h-auto rounded-lg">
+                        <span class="block mt-4 text-gray-400 text-sm">Gig Desk</span>
+                        <h2 class="text-lg md:text-2xl lg:text-3xl mt-2 leading-snug">
+                            All-in-one dashboard to manage gigs, tours, venues, and payrolls.
+                        </h2>
+                    </div>
+
+                    <div class="text-white p-2 sm:mt-10 lg:mt-20">
+                        <img src="https://zeeframes.com/storage/278/2.png" class="w-full h-auto rounded-lg">
+                        <span class="block mt-4 text-gray-400 text-sm">Gig Desk</span>
+                        <h2 class="text-lg md:text-2xl lg:text-3xl mt-2 leading-snug">
+                            All-in-one dashboard to manage gigs, tours, venues, and payrolls.
+                        </h2>
+                    </div>
+
+                    <div class="text-white p-2">
+                        <img src="https://zeeframes.com/storage/277/1-%282%29.png" class="w-full h-auto rounded-lg">
+                        <span class="block mt-4 text-gray-400 text-sm">Gig Desk</span>
+                        <h2 class="text-lg md:text-2xl lg:text-3xl mt-2 leading-snug">
+                            All-in-one dashboard to manage gigs, tours, venues, and payrolls.
+                        </h2>
+                    </div>
+
+                    <div class="text-white p-2 sm:mt-10 lg:mt-20">
+                        <img src="https://zeeframes.com/storage/275/Rectangle-6338.png"
+                            class="w-full h-auto rounded-lg">
+                        <span class="block mt-4 text-gray-400 text-sm">Gig Desk</span>
+                        <h2 class="text-lg md:text-2xl lg:text-3xl mt-2 leading-snug">
+                            All-in-one dashboard to manage gigs, tours, venues, and payrolls.
+                        </h2>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="bg-black py-10 lg:py-20 px-4 md:px-6">
+                <div class="max-w-4xl mx-auto text-center border border-gray-700 rounded-3xl p-6 md:p-10">
+
+                    <h2 class="text-white text-xl sm:text-2xl md:text-3xl font-semibold">
+                        Your project here
+                    </h2>
+
+                    <p class="text-gray-400 mt-4 text-base md:text-lg leading-relaxed">
+                        The proof is in our work. Check out
+                        <span class="text-[#F3FE00] underline">our case studies</span>
+                        to learn how our product development services can transform your business.
+                    </p>
+
+                    <button class="mt-6 px-6 md:px-8 py-3 md:py-4 bg-[#F3FE00] text-black font-semibold rounded-full">
+                        Book a discovery call
+                    </button>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="relative bg-[url('./images/gradient-bg.webp')] bg-cover bg-center w-full min-h-screen py-10">
+
+            <div class="relative max-w-6xl mx-auto min-h-screen flex items-center px-6">
+
+                <div class="flex flex-col lg:flex-row items-center gap-10 w-full">
+
+                    <div class="lg:w-[70%] text-center lg:text-left">
+                        <h2 class="text-white text-3xl md:text-4xl lg:text-6xl font-bold leading-tight">
+                            Design That Thinks. Interfaces That Feel.
+                        </h2>
+
+                        <p class="text-gray-300 mt-6 text-lg md:text-xl leading-relaxed">
+                            At ZeeFrames, we craft AI-ready design systems for modern software responsive, scalable, and
+                            human-centered
+                        </p>
+
+                        <button
+                            class="mt-6 px-8 py-3 bg-[#F3FE00] text-black font-semibold rounded-full hover:scale-105 transition">
+                            See AI in action
+                        </button>
+                    </div>
+
+                    <div class="lg:w-[30%] flex justify-center">
+                        <img src="./images/star.gif" alt="star" class="w-40 lg:w-56">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section class="bg-black text-white px-6 md:px-12 py-10 lg:py-20">
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12">
+
+                <div>
+                    <p class="text-[#F3FE00] font-semibold mb-4">FAQS</p>
+
+                    <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                        Questions? We’ve <br> Got Answers
+                    </h2>
+
+                    <p class="text-gray-400 mb-8">
+                        ZeeFrames reduces design complexity & speeds up product launches with clear UX workflows,
+                        scalable visual systems, and no-code execution.
+                    </p>
+
+                    <div class="flex items-center gap-6">
+                        <button
+                            class="bg-white text-black px-6 py-3 rounded-full hover:bg-gray-200 transition whitespace-nowrap">
+                            Book a free call
+                        </button>
+
+                        <img src="images/clutch-reviews.svg" alt="rating" class="h-8">
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+
+                    <div class="faq-item border border-gray-800 rounded-xl transition-all duration-300">
+                        <button onclick="toggleFaq(this)"
+                            class="w-full flex justify-between items-center p-5 text-left">
+                            <span>What is UI UX design, and why is it important?</span>
+                            <span class="faq-icon text-2xl transition">+</span>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-5 text-gray-400">
+                            <div class="py-3">
+                                UX design, or user experience design, is designing digital products that are easy to use
+                                and provide a positive experience for the user. It is important because a good UX design
+                                can increase user satisfaction, engagement, and conversions.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item border border-gray-800 rounded-xl transition-all duration-300">
+                        <button onclick="toggleFaq(this)"
+                            class="w-full flex justify-between items-center p-5 text-left">
+                            <span>What is the UX design process, and how long does it take?</span>
+                            <span class="faq-icon text-2xl transition">+</span>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-5 text-gray-400">
+                            <div class="py-3">
+                                UI design, or user interface design, is the visual design of digital products, including
+                                the layout, colors, typography, and other elements. It differs from UX design, focusing
+                                more on the product's aesthetic appeal and visual aspects. In contrast, UX design
+                                focuses on the overall experience of the user.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item border border-gray-800 rounded-xl transition-all duration-300">
+                        <button onclick="toggleFaq(this)"
+                            class="w-full flex justify-between items-center p-5 text-left">
+                            <span>What types of UX design services do you offer?</span>
+                            <span class="faq-icon text-2xl transition">+</span>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-5 text-gray-400">
+                            <div class="py-3">
+                                We offer various UX design services, including UX research, wireframing, prototyping,
+                                usability testing, and graphics design. We work closely with our clients to understand
+                                their unique needs and goals and provide customized solutions to help them achieve their
+                                objectives.
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item border border-gray-800 rounded-xl transition-all duration-300">
+                        <button onclick="toggleFaq(this)"
+                            class="w-full flex justify-between items-center p-5 text-left">
+                            <span>Are there any customer reviews or case studies available for ZeeFrames UI UX
+                                Design?</span>
+                            <span class="faq-icon text-2xl transition">+</span>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-5 text-gray-400">
+                            <div class="py-3">
+                                At ZeeFrames, we believe in the power of Human-Computer Interaction and leverage it to
+                                make informed, data-driven design decisions that set us apart from the competition. As a
+                                leading UI UX design studio in Pakistan, we follow a design strategy that begins with
+                                discovering the needs and pain points of users and ends with real user testing for
+                                direct feedback. This approach enables us to create user-centric designs that enhance
+                                usability, accessibility, and overall user satisfaction.
+
+                                Our design philosophy is simple: put users at the center of everything we do. Whether
+                                it's UX research or designing User Flows, Wireframing or Prototyping our team of expert
+                                UI UX designers ensure that your users are considered in every phase of designing to
+                                deliver outstanding results that meet the unique needs of your business.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item border border-gray-800 rounded-xl transition-all duration-300">
+                        <button onclick="toggleFaq(this)"
+                            class="w-full flex justify-between items-center p-5 text-left">
+                            <span>Are there any customer reviews or case studies?</span>
+                            <span class="faq-icon text-2xl transition">+</span>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-5 text-gray-400">
+                            <div class="py-3">
+                                At ZeeFrames, we take pride in our customer reviews and case studies that showcase our
+                                expertise in the UI UX design industry. You can easily access them on our website to get
+                                a glimpse of our work and the impact it has had on our clients' businesses. As a
+                                top-class UI UX design firm, we have worked with a diverse range of clients worldwide,
+                                helping them create engaging and intuitive digital experiences for their customers. With
+                                our expertise and user-centered design approach, you can be rest assured as we will take
+                                your website design to the next level.
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="Insights">
+            <div class="bg-black text-white px-6 md:px-12 py-10 lg:py-20">
+                <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10">
+                    <div>
+                        <span class="text-[#F3FE00] text-sm uppercase tracking-widest">
+                            Insights
+                        </span>
+                        <h2 class="text-white text-4xl md:text-6xl font-bold mt-6 leading-tight max-w-3xl">
+                            Insights That Inspire <br> Vision Forward
+                        </h2>
+                    </div>
+                    <div class="lg:mt-4">
+                        <button
+                            class="bg-gray-200 text-black px-8 py-4 rounded-full flex items-center gap-3 hover:scale-105 transition">
+                            Explore More
+                        </button>
+                    </div>
+                </div>
+                <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-10">
+
+                    <div
+                        class="group bg-[#0B0B0B] border-4 border-gray-800 rounded-2xl overflow-hidden transition duration-300 hover:scale-[1.02] hover:border-[#F3FE00]">
+                        <img src="images/ai-agents-vs-traditional-automation-what-businesses-actually-need.webp"
+                            class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3
+                                class="text-white text-2xl font-semibold leading-snug transition duration-300 group-hover:text-[#F3FE00]">
+                                AI Agents vs Traditional Automation: What Businesses Actually Need
+                            </h3>
+                            <p class="text-gray-400 mt-4">
+                                Discover the key differences between AI agents and traditional automation....
+                            </p>
+                            <span class="text-gray-500 text-sm mt-6 block">
+                                7 min read • 2026-04-27
+                            </span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group bg-[#0B0B0B] border-4 border-gray-800 rounded-2xl overflow-hidden transition duration-300 hover:scale-[1.02] hover:border-[#F3FE00]">
+                        <img src="images/why-you-re-spending-on-ads-but-not-getting-results-design-fix-inside-.webp"
+                            class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3
+                                class="text-white text-2xl font-semibold leading-snug transition duration-300 group-hover:text-[#F3FE00]">
+                                Why You’re Spending on Ads but Not Getting Results (Design Fix...)
+                            </h3>
+                            <p class="text-gray-400 mt-4">
+                                Learn how small design mistakes like poor images, messy layouts, and...
+                            </p>
+                            <span class="text-gray-500 text-sm mt-6 block">
+                                7 min read • 2026-04-23
+                            </span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group bg-[#0B0B0B] border-4 border-gray-800 rounded-2xl overflow-hidden transition duration-300 hover:scale-[1.02] hover:border-[#F3FE00]">
+                        <img src="images/hire-affordable-super-fast-ui-ux-designers-active-in-24-hours-.webp"
+                            class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3
+                                class="text-white text-2xl font-semibold leading-snug transition duration-300 group-hover:text-[#F3FE00]">
+                                Hire Affordable, Super-Fast UI UX Designers Active in 24 Hours
+                            </h3>
+                            <p class="text-gray-400 mt-4">
+                                Hire a world-class UI/UX designer within 24 hours. ZeeFrames delivers...
+                            </p>
+                            <span class="text-gray-500 text-sm mt-6 block">
+                                7 min read • 2026-04-22
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="bg-black text-white py-10 lg:py-20 px-6">
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-start">
+
+                <div>
+                    <h2 class="text-4xl md:text-6xl font-bold leading-tight">
+                        Let’s build something <span class="text-[#F3FE00]">amazing</span> together
+                    </h2>
+
+                    <p class="text-gray-400 mt-6 text-lg max-w-lg">
+                        Have a project in mind? Fill out the form and our team will get back to you within 24 hours.
+                    </p>
+
+                    <div class="mt-10 space-y-3 text-gray-300">
+                        <p>hello@yourcompany.com</p>
+                        <p>India</p>
+                        <p>+91 98765 43210</p>
+                    </div>
+                </div>
+
+                <form class="bg-[#0B0B0B] border border-gray-800 rounded-2xl p-4 lg:p-8 space-y-6">
+
+                    <div>
+                        <label class="block text-sm mb-2 text-gray-400">Full Name</label>
+                        <input type="text" placeholder="Enter your name"
+                            class="w-full bg-black border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-[#F3FE00] focus:shadow-[0_0_10px_#F3FE00]">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm mb-2 text-gray-400">Email Address</label>
+                        <input type="email" placeholder="Enter your email"
+                            class="w-full bg-black border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-[#F3FE00] focus:shadow-[0_0_10px_#F3FE00]">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm mb-2 text-gray-400">Your Message</label>
+                        <textarea rows="4" placeholder="Tell us about your project"
+                            class="w-full bg-black border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-[#F3FE00] focus:shadow-[0_0_10px_#F3FE00]"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-[#F3FE00] text-black font-semibold py-3 rounded-full hover:scale-105 transition duration-300">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-black text-white pt-10 lg:pt-20 pb-10 px-6 border-t border-gray-800">
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+            <div>
+                <img src="images/logo.svg" alt="ZeeFrames logo" class="mb-6 w-36" loading="lazy">
+                <p class="text-gray-400 leading-relaxed">
+                    We design and build scalable digital experiences with a focus on UI UX, performance, and innovation.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-semibold mb-6">Company</h4>
+                <ul class="space-y-3 text-gray-400">
+                    <li><a href="index.html" class="hover:text-[#F3FE00] transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-[#F3FE00] transition">About</a></li>
+                    <li><a href="service.html" class="hover:text-[#F3FE00] transition">Services</a></li>
+                    <li><a href="work.html" class="hover:text-[#F3FE00] transition">Work</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-semibold mb-6">Resources</h4>
+                <ul class="space-y-3 text-gray-400">
+                    <li><a href="#" class="hover:text-[#F3FE00] transition">Insights</a></li>
+                    <li><a href="#" class="hover:text-[#F3FE00] transition">Case Studies</a></li>
+                    <li><a href="#" class="hover:text-[#F3FE00] transition">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-[#F3FE00] transition">Terms</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-semibold mb-6">Stay Updated</h4>
+
+                <form class="flex flex-col gap-4">
+                    <input type="email" placeholder="Enter your email"
+                        class="bg-[#0B0B0B] border border-gray-700 px-4 py-3 rounded-lg focus:outline-none focus:border-[#F3FE00] focus:shadow-[0_0_10px_#F3FE00]">
+
+                    <button
+                        class="bg-[#F3FE00] text-black font-semibold py-3 rounded-full hover:scale-105 hover:shadow-[0_0_20px_#F3FE00] transition">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-6">
+
+            <p class="text-gray-500 text-sm text-center md:text-left">
+                © 2025 ZeeFrames. All rights reserved.
+            </p>
+
+            <div class="flex items-center gap-6 text-gray-400">
+
+                <a href="#" class="hover:text-[#F3FE00] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path
+                            d="M22 5.92c-.77.35-1.6.58-2.46.69a4.3 4.3 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.3 3.9 12.15 12.15 0 0 1-8.83-4.47 4.28 4.28 0 0 0 1.33 5.7 4.25 4.25 0 0 1-1.94-.54v.05a4.29 4.29 0 0 0 3.43 4.2c-.47.13-.97.2-1.48.2-.36 0-.71-.03-1.05-.1a4.29 4.29 0 0 0 4 2.98A8.6 8.6 0 0 1 2 19.54a12.13 12.13 0 0 0 6.56 1.92c7.87 0 12.18-6.52 12.18-12.17 0-.19 0-.38-.01-.57A8.72 8.72 0 0 0 22 5.92z" />
+                    </svg>
+                </a>
+
+                <a href="#" class="hover:text-[#F3FE00] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path
+                            d="M20.45 20.45h-3.56v-5.6c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95v5.69H9.35V9h3.42v1.56h.05c.48-.91 1.65-1.85 3.39-1.85 3.63 0 4.3 2.39 4.3 5.49v6.25zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z" />
+                    </svg>
+                </a>
+
+                <a href="#" class="hover:text-[#F3FE00] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.38-3.37-1.38-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.88 1.55 2.31 1.1 2.87.84.09-.66.35-1.1.63-1.35-2.22-.26-4.55-1.14-4.55-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.27 2.75 1.05a9.2 9.2 0 0 1 5 0c1.9-1.32 2.74-1.05 2.74-1.05.56 1.42.21 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.95-2.34 4.82-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.58.69.48A10.27 10.27 0 0 0 22 12.26C22 6.58 17.52 2 12 2z" />
+                    </svg>
+                </a>
+
+                <a href="#" class="hover:text-[#F3FE00] transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path
+                            d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm4.25 5.5A4.75 4.75 0 1 0 16.75 12 4.75 4.75 0 0 0 12 7.5zm6.13-.88a1.13 1.13 0 1 0-1.13-1.12 1.13 1.13 0 0 0 1.13 1.12zM12 9a3 3 0 1 1-3 3 3 3 0 0 1 3-3z" />
+                    </svg>
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>

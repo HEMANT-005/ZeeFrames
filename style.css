@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-section {
+  background: url("https://zeeframes.com/frontend-assets/images/home-hero-bg.webp");
+  background-size: cover;
+  background-position: center;
+  
+}
